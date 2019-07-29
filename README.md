@@ -1,4 +1,4 @@
-Ava Task Scheduler
+Open Task Scheduler
 ===================
 
 This README provides a quick start. [Please see these slides explaining more details](DOCS/Task-Scheduler.pptx)
