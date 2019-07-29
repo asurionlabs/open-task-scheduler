@@ -1,0 +1,10 @@
+{
+    "type": "hold-status",
+    "partner": "",
+    "context": "claims",
+    "delayInSecond": 900,
+    "repeatCount": 0,
+    "sessionId": "_sessionId_",
+    "mdn": "4081111111",
+    "claimId": "_claimId_"
+}

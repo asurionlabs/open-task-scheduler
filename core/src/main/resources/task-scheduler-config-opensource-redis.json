@@ -1,0 +1,54 @@
+{
+	"taskConfigs": [
+		{
+			"name": "demo_task",
+			"scheduler": "MemoryQueueTaskScheduler",
+			"pollingInterval": 1,
+			"dispatchRate": -1,
+			"delayInSecond": 0,
+			"repeatCount": 0,
+			"batchSize": 0,
+			"taskQueue": {
+				"type": "MemoryTaskQueue"
+			},
+			"dispatcher": [
+				{
+					"type": "StdOutTaskDispatcher"
+				}
+			]
+			
+		},
+		{
+			"name": "demo_dyno_redis_task",
+			"scheduler": "DynoQueueTaskScheduler",
+			"pollingInterval": 1,
+			"dispatchRate": -1,
+			"delayInSecond": 0,
+			"repeatCount": 0,
+			"batchSize": 0,
+			"taskQueue": {
+				"type": "DynoTaskQueue"
+			},
+			"dispatcher": [
+				{
+					"type": "StdOutTaskDispatcher"
+				}
+			]
+			
+		}
+	],
+	"dynoRedisTaskQueueConfig": {
+		"dataCenter": {
+			"region": "dc",
+			"localDC": "rack1",
+			"rack": "rack1",
+			"host": "localhost",
+		    "port": 6379
+		},
+		"queueConfig": {
+			"prefix": "open_ts",
+			"ackTimeout": 60000,
+			"ackOnPoll": true
+		}
+	}
+}
