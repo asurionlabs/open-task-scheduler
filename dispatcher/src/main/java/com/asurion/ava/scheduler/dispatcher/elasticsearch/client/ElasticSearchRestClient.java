@@ -28,8 +28,6 @@ import org.apache.log4j.Logger;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 
-import com.asurion.ava.adaptercore.security.SSLContextUtil;
-
 
 /**
  * Access AWS ElasticSearch/Kibana via by ResteasyClient. 
@@ -80,7 +78,8 @@ public class ElasticSearchRestClient implements ElasticSearchClient {
 
 
     private SSLContext getSSLContext() throws Exception {
-        return SSLContextUtil.getInstance().getSSLContexByTrustAll();
+    	// TODO: build your SSL context here
+    	return null;
     }
 
 

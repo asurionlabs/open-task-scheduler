@@ -1,20 +1,14 @@
-<!-- 
-Copyright (C) 2018-2019  Asurion, LLC
-
- Open Task Scheduler is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- Open Task Scheduler is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with Open Task Scheduler.  If not, see <https://www.gnu.org/licenses/>.
- -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!-- Copyright (C) 2018-2019 Asurion, LLC Open Task Scheduler is free software: 
+	you can redistribute it and/or modify it under the terms of the GNU General 
+	Public License as published by the Free Software Foundation, either version 
+	3 of the License, or (at your option) any later version. Open Task Scheduler 
+	is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+	without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+	PURPOSE. See the GNU General Public License for more details. You should 
+	have received a copy of the GNU General Public License along with Open Task 
+	Scheduler. If not, see <https://www.gnu.org/licenses/>. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<groupId>com.asurion.ava</groupId>
@@ -24,7 +18,7 @@ Copyright (C) 2018-2019  Asurion, LLC
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ava-task-scheduler-dispatcher</artifactId>
 	<dependencies>
-                <dependency>	
+		<dependency>
 			<groupId>com.asurion.ava</groupId>
 			<artifactId>ava-task-scheduler-core</artifactId>
 			<version>${project.version}</version>
@@ -35,28 +29,38 @@ Copyright (C) 2018-2019  Asurion, LLC
 			<version>2.9.0</version>
 		</dependency>
 		<dependency>
-			 <groupId>org.slf4j</groupId>
-			 <artifactId>slf4j-log4j12</artifactId>
-			 <version>1.7.21</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.collections</groupId>
+			<artifactId>google-collections</artifactId>
+			<version>1.0-rc2</version>
 		</dependency>
 	</dependencies>
 	<build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.12.4</version>
-        <configuration>
-          <skipTests>true</skipTests>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>	
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<repositories>
-        <repository>
-            <id>repo-opendmk</id>
-            <url>http://repo1.maven.org/maven2/</url>
-        </repository>
-    </repositories>
+		<repository>
+			<id>repo-opendmk</id>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
 
 </project>
