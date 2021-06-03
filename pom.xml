@@ -41,7 +41,7 @@ Copyright (C) 2018-2019  Asurion, LLC
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-client</artifactId>
-			<version>3.0.12.Final</version>
+			<version>4.5.7.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
